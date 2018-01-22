@@ -54,7 +54,7 @@ You're reading it!
 
 #### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
-The code for this step is contained in the first code cell of the IPython notebook located in `advanced-lane-finding.ipynb`.
+The code for this step is contained in the first code cell of the IPython notebook located in [`advanced-lane-finding.ipynb`](../advanced-lane-finding.ipynb).
 
 I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.
 
@@ -74,7 +74,7 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at code blocks 15 through 19 in `advanced-lane-finding.ipynb`).  Below are examples from the different combinations I had explored. Ultimity, I chose to convert the RGB color image to HLS and use the S channel to as the input to the Sobel gradient calculations.
+I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at code blocks 15 through 19 in [`advanced-lane-finding.ipynb`](../advanced-lane-finding.ipynb)).  Below are examples from the different combinations I had explored. Ultimity, I chose to convert the RGB color image to HLS and use the S channel to as the input to the Sobel gradient calculations.
 
 ![alt text][colorspace_exploration]
 ![alt text][sobel_magnitude_direction]
@@ -87,7 +87,7 @@ Color transform and thresholding on test images.
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-The code for my perspective transform includes a function called `unwarp()`, which appears in code block  13 and 14 in the file `advanced-lane-finding.ipynb`.  The `unwarp()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
+The code for my perspective transform includes a function called `unwarp()`, which appears in code block  13 and 14 in the file [`advanced-lane-finding.ipynb`](../advanced-lane-finding.ipynb).  The `unwarp()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
 
 ```python
 src = np.float32([(555,464),
