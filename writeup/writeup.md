@@ -38,10 +38,6 @@ The goals / steps of this project are the following:
 [radius_curvature]: ./radius-curvature.png "Radius Curvature"
 [draw_data]: ../output_images/13-draw_data.png "draw_data"
 
-[image4]: ./examples/warped_straight_lines.jpg "Warp Example"
-[image6]: ./examples/example_output.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
-
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
